@@ -35,7 +35,7 @@ public class CuentaServices {
     }
     public Cuenta get(String idCuenta) throws  Exception{
 
-        return cuentaRepository.getReferenceById(Long.parseLong(idCuenta));
+        return cuentaRepository.findByNumeroCuenta(idCuenta);
     }
 
     public Cuenta update(Cuenta cuenta) throws Exception{

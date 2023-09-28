@@ -37,7 +37,7 @@ public class TransferenciaSevices {
     }
     public Transferencia get(Long idTransferencia) throws  Exception{
 
-        return transferenciaRepository.getById(idTransferencia);
+        return transferenciaRepository.findById(idTransferencia).get();
     }
 
     public void delete(Transferencia transferencia){ transferenciaRepository.delete(transferencia);
